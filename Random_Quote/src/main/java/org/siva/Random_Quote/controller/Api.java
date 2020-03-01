@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/home")
+@RequestMapping("")
 public class Api {
 
     @Autowired  private MailService mailService;
