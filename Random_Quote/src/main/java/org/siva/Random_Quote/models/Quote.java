@@ -8,18 +8,9 @@ import lombok.*;
 @AllArgsConstructor
 public class Quote {
     private String content;
-    private String author;
-
-    @Override
-    public String toString() {
-        return "Quote{" +
-                "content='" + content + '\'' +
-                ", author='" + author + '\'' +
-                '}';
-    }
 
     public String print(){
-        return this.getContent()+"\n\n --->By "+ this.getAuthor();
+        return this.getContent();
     }
 
 }

@@ -97,9 +97,4 @@ public class Api {
             return "<h3 align =\"center\" style=\"color:green\">Your id is:</h3>" + email.getId();
         }
     }
-
-    @PostMapping("/mail")
-    public String putQuote(@RequestBody Mail mail){
-        return mailService.sendEmail();
-    }
 }
