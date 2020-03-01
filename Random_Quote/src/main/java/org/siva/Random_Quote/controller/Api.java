@@ -11,12 +11,12 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/home")
 public class Api {
 
     @Autowired  private MailService mailService;
 
-    @RequestMapping(value = "/home",method = RequestMethod.GET)
+    @RequestMapping(value = "",method = RequestMethod.GET)
     public ModelAndView sample(){
         ModelAndView mav = new ModelAndView("home.html");
         return mav;
