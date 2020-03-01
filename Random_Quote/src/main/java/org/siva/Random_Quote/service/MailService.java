@@ -55,6 +55,8 @@ public class MailService {
         if(All==null || All.isEmpty()){
             return "No Mails";
         }
+        body=body+ "\n\n\n\n" + "To Subscribe/Unsubscribe please visit ====>  "     +"https://morning-quotes.herokuapp.com/";
+
         List<@Email @NotNull String> mails = All.stream().
                 map(mail -> mail.getEmail()).collect(Collectors.toList());
         String[] emails = new String[mails.size()];
