@@ -37,7 +37,7 @@ public class MailService {
         return mails;
     }
 
-    @Scheduled(cron = "${job.run}")
+    @Scheduled(cron = "${job.run}",zone = "GMT+5:30")
     public String sendEmail() throws InterruptedException{
 //        System.out.println("You are in .......................");
         HttpHeaders headers = new HttpHeaders();
